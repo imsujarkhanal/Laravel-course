@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Website Name - @yield('title')</title>
+  <title>Website Name - @yield('title','Website')</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,7 +21,11 @@
 
   <div class="content-wrapper">
     <main>
+    @hasSection('content')
     @yield('content')
+    @else
+    <h2>No content found </h2>
+    @endif
     </main>
     <aside>
       <ul>
@@ -29,6 +33,8 @@
         <li>About Us</li>
         <li>Gallery</li>
         <li>Contact Us</li>
+        @yield('sidebar')
+        @show
       </ul>
     </aside>
   </div>
