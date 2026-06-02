@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Website Name</title>
+  <title>Website Name - @yield('title')</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <header>
-    <h1>Website Name</h1>
+    <h1>Website Name </h1>
   </header>
 
   <nav>
-    <a href="#">Home</a>
-    <a href="#">About Us</a>
-    <a href="#">Gallery</a>
-    <a href="#">Contact Us</a>
+    <a href="/ ">Home</a>
+    <a href="/about">About Us</a>
+    <a href="/post">Post</a>
+   
   </nav>
 
   <div class="content-wrapper">
